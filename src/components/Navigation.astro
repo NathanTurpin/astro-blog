@@ -1,0 +1,37 @@
+---
+const nav = [
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "/about",
+    name: "about",
+    data: "data-astro-reload",
+  },
+  {
+    path: "/blog",
+    name: "blog",
+  },
+  {
+    path: "/tags",
+    name: "tags",
+  },
+];
+---
+
+<!-- <div transition:animate="slide" class="nav-links">
+  {
+    nav.map((el) => (
+      <a href={el.path} data-atribute={el.data}>
+        {el.name}
+      </a>
+    ))
+  }
+</div> -->
+<div transition:animate="slide" class="nav-links">
+  <a href="/">Home</a>
+  <a href="/about/" data-astro-reload>About</a>
+  <a href="/blog/">Blog</a>
+  <a href="/tags/">Tags</a>
+</div>
